@@ -15,38 +15,90 @@
 <body>
     <header>
         <div class="menu-logo">
-          <p class="info-prom">Precisa do produto antes do Natal? Não se preocupe! A Game Mania garante a entrega! Veja mais no <a href="">link.</a></p>
+          <p class="info-prom">Precisa do produto antes do Natal? Não se preocupe! A Game Mania garante a entrega! Veja mais no <a href="html/entrega.html">link.</a></p>
             <div class="menu container">
                 <div class="row">
+
+                  <!-- Menu Sandwitch dropdown  -->
+
                    <div class="barras col">
-                       <a href=""><img src="img/barras.png" width="40px" alt="menu barras"></a>
+                       <a href="" id="menu-dropdown"><img src="img/barras.png" width="40px" alt="menu barras"></a>
+                       <ul id="opcoes" style="display: none;z-index:1;">
+                        <li><a href="#">Playstation</a>
+                          <ul>
+                            <li><a href="#">Playstation 5</a></li>     
+                            <li><a href="#">Playstation 4</a></li>     
+                            <li><a href="#">Playstation 3</a></li>     
+                            <li><a href="#">Playstation 2</a></li>     
+                            <li><a href="#">Outros Consoles Playstation 5</a></li>   
+                          </ul>
+                        </li>
+                        <li><a href="#">Xbox</a>
+                          <ul>
+                            <li><a href="#">Xbox Series X/S</a></li>
+                            <li><a href="#">Xbox One</a></li>
+                            <li><a href="#">Xbox 360</a></li>        
+                          </ul>
+                        </li>
+                        <li><a href="#">Nintendo</a>
+                          <ul>
+                            <li><a href="#">Nintendo Switch</a></li>
+                            <li><a href="#">Wii U</a></li>
+                            <li><a href="#">Nintendo DS</a></li>
+                            <li><a href="#">Outros Consoles Nintendo</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="#">PC Gamer</a>
+                          <ul>
+                            <li><a href="#">Intel</a></li>
+                            <li><a href="#">AMD</a></li>
+                            <li><a href="#">Outros Processadores</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="#">Celulares e Tablets</a>
+                          <ul>
+                            <li><a href="#">Iphone</a></li>
+                            <li><a href="#">Sansung</a></li>
+                            <li><a href="#">Xiaomi</a></li>
+                            <li><a href="#">Motorola</a></li>
+                            <li><a href="#">Outras Marcas</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="#">Acessórios</a></li>
+                      </ul>
                    </div>
+
+                    <!-- Header principal com logo e botões -->
+
                    <div class="logo col-4">
                        <a href=""><img src="img/logo.png" width="180px" alt="Logo so Site"></a>
                    </div>
                    <div class="topnav col">
                      <div class="search-container col">
                         <form action="">
-                          <input type="text" placeholder="Pesquisa" name="search">
+                          <input id="barra-busca" type="text" placeholder="Pesquisa" name="search">
                           <button type="submit"><i class="fa fa-search"></i></button>
                         </form>
                      </div>
                     </div>
                    <div class="entrega col">
-                       <a href=""><img src="img/entrega.png" width="70px" alt="Entrega Rápida"></a>                    
+                       <a href="html/login.html"><img src="img/entrega.png" width="70px" alt="Entrega Rápida"></a>                    
                    </div>
                    <div class="favoritos col">
-                       <a href=""><img src="img/favoritos.png" width="50px" alt="Favoritos"></a>
+                       <a href="html/login.html"><img src="img/favoritos.png" width="50px" alt="Favoritos"></a>
                    </div>
                    <div class="carrinho col">
-                       <a href=""><img src="img/carrinho2.png" width="50px" alt="Carrinho de Compras"></a>
+                       <a href="html/login.html"><img src="img/carrinho2.png" width="50px" alt="Carrinho de Compras"></a>
                    </div>
                    <div class="login col">
-                       <a href=""><img src="img/login.png" width="50px" alt="Login"></a>
+                       <a href="html/login.html"><img src="img/login.png" width="50px" alt="Login"></a>
                    </div>
                 </div>
-            </div>
+            </div>            
         </div>
+
+     <!-- Menu do Header -->
+
         <section class="nav-menu">
             <nav class="container">
              <div class="row"></div>
@@ -62,34 +114,90 @@
            </nav>             
         </section>
     </header>
+ <section>
 
- <section class="banner-matrix" style="background-image: url(img/fundo-matrix.jpg);">
-        &nbsp;
-        <div class="ofertas">
-            <a href=""><img src="img/natal-prom.png"></a>
-        </div>
- </section>
-    
-    
+      <!-- Carrossel versão desktop -->
+
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/jogos-ofer (1).jpg" class="d-block w-100" height="500px" alt="promoções de jogos">
+                <div class="carousel-caption d-none d-md-block">
+                  <a href="" style="text-decoration: none;"><h5>Melhores Lançamentos!</h5>
+                  <p>Confira a nossa seleção especial dos melhores jogos para PS5.</p></a>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/jogos-ofer (2).jpg" class="d-block w-100" height="500px" alt="produtos apple">
+                <div class="carousel-caption d-none d-md-block">
+                  <a href="" style="text-decoration: none;"><h5>Apple Mania!</h5>
+                  <p>Ofertas imperdíveis em produtos da Apple.</p></a>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/jogos-ofer (3).jpg" class="d-block w-100" height="500px"  alt="Nitendo Switch">
+                <div class="carousel-caption d-none d-md-block">
+                  <a href="" style="text-decoration: none;"><h5>Nintendo Switch</h5>
+                  <p>Abaixamos o preço do Console e temos uma oferta especial para novos clientes. Confira antes que acabe!</p></a>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/mario.jpg" class="d-block w-100" height="500px" alt="Jogos do Mario">
+                <div class="carousel-caption d-none d-md-block">
+                  <a href="" style="text-decoration: none;"><h5>Mario Edição Especial</h5>
+                  <p>Novas Action Figures do Mario e cia disponíveis.</p></a>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>       
+ </section>  
+
+ <!-- Submenu dos Consoles -->
 
     <section class="secao-consoles">
         <div class="consoles container">
          <a class="play col" href=""><img src="img/play.png" alt="Playstation"></a>
          <a class="xbox col" href=""><img src="img/xbox.png" alt="Xbox"></a>
-         <a class="pc col" href=""><img src="img/pc.png" alt="PC"></a>
+         <a class="pc col" href="" style="width: 180px;"><img src="img/pc.png" alt="PC"></a>
          <a class="nitendo col" href=""><img src="img/switch.png" alt="Nitendo Switch"></a>
          <a class="aces col" href=""><img src="img/aces.png" alt="Acessórios"></a>
         </div>
         <nav class="menu-console container">
           <div class="row">
-            <a class="play col" href="">Playstation</a>
+            <a class="play col" href="">Playstation 5</a>
             <a class="xbox col" href="">Xbox Series X|S</a>
             <a class="pc col" href="">PC Gamer</a>
             <a class="nitendo col" href="">Nintendo Switch</a>
             <a class="aces col" href="">Acessórios</a>
           </div>
+        </nav> 
+
+        <nav class="menu-console-mobile container">
+            <div class="row">
+              <p class="ps5 col">PS 5</p>
+              <p class="xs col">Xbox X|S</p>
+              <p class="pc-mobile col">PC</p>
+              <p class="switch col">Switch</p>
+              <p class="mais col">Mais +</p>
+            </div>            
         </nav>              
     </section>
+
+    <!-- Promoções do Site -->
 
     <div class="banner-prom" style="background-image: url(img/fundo-prom.png);">
         &nbsp;
@@ -114,23 +222,107 @@
                 </div>
             </div>
         </div> 
-               
+
+        <!-- Carrossel da versão Tablet -->
+
+        <section class="carrossel-produtos-tablet" style="margin-left: 120px;margin-top: 60px;">
+          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators" style="filter: invert(50%);margin-bottom: -80px; margin-left: 100px;">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner" style="width: 700px;margin-left: 80px;">
+              <div class="carousel-item active">
+                <img src="img/prom-amd.png" class="d-block w-100" alt="Pc AMD">
+              </div>
+              <div class="carousel-item">
+                <img src="img/prom-iphone.png" class="d-block w-100" alt="Iphone">              
+              </div>
+              <div class="carousel-item">
+                <img src="img/prom-lost-planet.png" class="d-block w-100" alt="Lost Planet">
+              </div>
+              <div class="carousel-item">
+                <img src="img/prom-redmi.png" class="d-block w-100" style="width: 500px;" alt="Redmi">
+              </div>
+              <div class="carousel-item">
+                <img src="img/prom-rise.png" class="d-block w-100" alt="Ryse">
+             </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev" style="filter: invert(100%); margin-left: -50px;">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next" style="filter: invert(100%);margin-right: -80px;">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>  
+        </section>   
+
+       <!-- Carrosel da versão mobile -->
+
+      <section class="carrossel-produtos">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators" style="filter: invert(50%); margin-bottom: -60px;">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          </div>
+          <div class="carousel-inner" style="width: 600px;margin-left: 80px;">
+            <div class="carousel-item active">
+              <img src="img/prom-amd.png" class="d-block w-100" alt="Pc AMD">
+            </div>
+            <div class="carousel-item">
+              <img src="img/prom-iphone.png" class="d-block w-100" alt="Iphone">              
+            </div>
+            <div class="carousel-item">
+              <img src="img/prom-lost-planet.png" class="d-block w-100" alt="Lost Planet">
+            </div>
+            <div class="carousel-item">
+              <img src="img/prom-redmi.png" class="d-block w-100" width="200px" alt="Redmi">
+            </div>
+            <div class="carousel-item">
+              <img src="img/prom-rise.png" class="d-block w-100" alt="Ryse">
+           </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev" style="filter: invert(100%);">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next" style="filter: invert(100%);">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>  
+      </section>   
+
     </div>
     <div class="monte-pc">
         <a href=""><img src="img/monte-pc.png" width="1520px" alt="Monte o Seu Pc com a Game Mania!"></a>
     </div>
+
+    <!-- Footer Redes Sociais -->
+
     <footer>
      <section class="redes-sociais container">
-         <div class="row">
+       <div class="row">
          <div class="rede col"><p>Redes Sociais</p>
-         <a href=""><img src="img/facebook.png" width="80px"></a>
-         <a href=""><img src="img/instagram.png" width="65px"></a>
-         <a href=""><img src="img/youtube.png" width="80px"></a>
-         <a class="logo-foot row" href=""><img src="img/logo.png" alt="Game Mania"></a>
+         <a class="facebook" href="https://www.facebook.com/" target="_blank"><img src="img/facebook.png" width="80px"></a>
+         <a class="insta" href="https://www.instagram.com/" target="_blank"><img src="img/instagram.png" width="65px"></a>
+         <a class="youtube" href="https://www.youtube.com/" target="_blank"><img src="img/youtube.png" width="80px"></a>
+         <a class="logo-foot row" href="index.html"><img src="img/logo.png" alt="Game Mania"></a>
          </div>
-         <div class="inst col">
-         <p>Institucional</p>
-         <div class="inst-links">
+
+    <!-- Footer Institucional -->
+          
+      <div class="inst col">
+        <div class="inst-links">
+          <p>Institucional</p>
            <a class="row" href="">Empresa</a>
            <a class="row" href="">Nosso Time</a>
            <a class="row" href="">Nossa Missão</a>
@@ -146,15 +338,19 @@
          <div class="ender row">
          <p>Nossa loja está localizada na rua 25 de março no centro de São Paulo</p>
         </div>
-        </div>
-        <div class="atend col">
-         <p>Atendimento</p>
+      </div>    
+
+    <!-- Footer Atendimento -->
+               
+        <div class="atend col">                 
          <div class="contato">
-             <div class=" whats row">
+          <p class="contact" style="font-size: 20pt; margin-right: 150px;margin-top: -60px;">Atendimento</p>
+          <div class="contato-bloco" style="margin-top: 70px;">   
+            <div class=" whats row">
                <a href=""><img src="img/whatsapp.png" width="65px" alt="Whatsapp"></a>
-               <p>(11) 0000-0000</p>
+               <p>(11) 1234-5678</p>
              </div>
-             <div class="phone row">
+             <div class="tel row">
                 <a href=""><img src="img/phone.png" width="54px" alt="Telefone"></a>
                 <p>(11) 0101-01001</p>
              </div>  
@@ -164,30 +360,36 @@
              </div>
              <div class="horario">
                  <p>Atendimento de Segunda a Sexta, das 08:00 às 17:30</p>
-             </div>     
-        </div>
-        </div>
-        </div>
-     </section>
+             </div> 
+            </div>    
+          </div>
+        </div>      
+       </div>
+      </section>
+
+      <!-- Meios de Pagamento -->
+
      <div class="meios-pag">
      <div class="container">
          <div class="row">
-             <div class="col-6">
+             <div class="pag col-6">
              <p>Formas de Pagamento</p>
              <img src="img/meios-pag.png" alt="Meios de Pagamento">
             </div>
             <div class="direitos col-6">
-                <p>© 2021 Todos os Direitos</p> 
-                <p>Reservados a Game Mania.</p>
-                <p>CNPJ Fictício  x1111111/111-00</p>
+                <p>© 2021 Todos os Direitos<br>Reservados a Game Mania.<br>CNPJ Fictício  x1111111/111-00</p>
             </div>
          </div>
      </div>
      </div>
     </footer>
 
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    
+    <!-- Scripts JavaScript -->
+
+    <script src="js/jquery-3.6.0.js" ></script>
+    <script src="js/script.js"></script>    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
+    crossorigin="anonymous"></script>    
 </body>
 </html>
